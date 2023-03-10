@@ -1,0 +1,247 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color:rgb(255, 255, 255);
+  min-height: 80vh;}
+  
+
+.login-card {
+  border: 0;
+  margin-top: 10vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px 0 rgba(70, 69, 69, 0.43);
+  background-color: #ffffff;
+  background-color: #ffffff;
+  border: 1px solid rgb(116, 116, 116);
+  opacity: 1;
+  background: linear-gradient(135deg, #f7f9fc55 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(225deg, #f7f9fc 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(315deg, #f7f9fc55 25%, transparent 25%) 0px 0/ 80px 80px, linear-gradient(45deg, #f7f9fc 25%, #ffffff 25%) 0px 0/ 80px 80px;
+  overflow: hidden; }
+  
+h3{
+  margin-bottom: 10px;
+}
+
+.sign_image{
+  background: url("../img/image.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext {
+  padding: 0rem 0.75rem;
+}
+
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext,
+.form-floating>.form-select {
+  height: calc(2.5rem + 2px);
+  line-height: 1;
+}
+
+.form-floating>label {
+  padding: 0.5rem 0.75rem;
+}
+.passHelp{
+display: none;
+}
+.passCheck,.charCheck{
+  display: none;
+  color: #dc3545;
+  font-weight: 600;
+}
+.passCheck i,.charCheck i{
+  margin-left: 0px;
+}
+
+i{
+  margin-left: -40px;
+  cursor: pointer;
+  align-self: center;
+}
+
+.inputs{
+  display: flex;
+}
+
+.boutons{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  
+}
+   
+.icone_utilisateur{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -40px; 
+  margin-bottom: 20px;
+  justify-content: center;
+  background: rgb(250,70,201);
+  background: radial-gradient(circle, rgba(250,70,201,1) 0%, rgba(18,17,93,1) 100%);
+  box-shadow: 0 5px 10px 0 rgba(172, 168, 168, 0.43);
+  
+}
+.icone_utilisateur img{
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  align-self: center;
+}
+.souvenir{
+  margin-top: 1%;
+    
+}
+   
+.btn_inscription {
+  border: 5em;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  text-align: center;
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  background-image: linear-gradient(45deg, #4568dc, #f85ac9);
+  padding: 0.5em 2em;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
+  -webkit-transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  color: white;
+}
+
+.btn_inscription .text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: ani9 2s ease-in-out infinite alternate;
+  background-image: linear-gradient(45deg, #4568dc, #f85ac9);
+}
+  
+.btn_inscription:after {
+  content: "";
+  border-radius: 10px;
+  position: absolute;
+  margin: 2px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background: #0e0e10;
+}
+  
+.btn_inscription:hover {
+  background-image: linear-gradient(-45deg, #4568dc, #f85ac9);
+  box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+  transform: scale(1.05);
+  z-index: 1;
+}
+  
+.btn_inscription:hover .text {
+background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+}
+
+.link_btn{
+display: flex;
+justify-content: center;
+
+}
+
+.btn_lien {
+width: 250px;
+font-size: 16px;
+font-weight: 600;
+color: #fff;
+cursor: pointer;
+margin: 10px;
+height: 45px;
+border: none;
+background-size: 300% 100%;
+border-radius: 50px;
+-moz-transition: all .4s ease-in-out;
+-o-transition: all .4s ease-in-out;
+-webkit-transition: all .4s ease-in-out;
+transition: all .4s ease-in-out;
+}
+.btn_lien i{
+margin: 4px;
+}
+.btn_lien:hover {
+background-position: 100% 0;
+-moz-transition: all .4s ease-in-out;
+-o-transition: all .4s ease-in-out;
+-webkit-transition: all .4s ease-in-out;
+transition: all .4s ease-in-out;
+}
+
+.btn_lien:focus {
+outline: none;
+}
+
+.btn_lien.facebook {
+background-image: linear-gradient(
+to right,
+#0da3e4,
+#1c56bb,
+#04befe,
+#013c94
+);
+box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+.btn_lien.google {
+background-image: linear-gradient(
+to right,
+#ff2626,
+#d40000,
+#fc3f3f,
+#ad0909
+);
+box-shadow: 0 4px 15px 0 rgba(234, 76, 65, 0.75);
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .login-card {
+    margin-top: 10vh;
+    margin-left: 2%;
+    margin-right: 2%;}
+
+  body{
+    font-size: 90%;
+  }
+
+  .formulaire{
+    width: 55%;
+    margin: 0%;
+    padding: 0%;
+  }
+  .sign_image{
+    width: 45%;
+  }
+  .souvenir{
+    margin-top: 2%;
+      
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body{
+    font-size: 80%;
+  }
+  .login-card {
+  margin-top: 5vh;
+  margin-left: 1%;
+  margin-right: 1%;}
+  .souvenir{
+  margin-top: 3%;
+      
+  }
+}
+
